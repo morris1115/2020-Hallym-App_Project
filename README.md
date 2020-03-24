@@ -22,6 +22,5 @@
  * 개발 툴 : 
   
 ## 패치 노트
- * [2020-03-11]( https://github.com/baehongjun0212/H-Allym/blob/master/ )
- * [2020-03-18]( https://github.com/baehongjun0212/H-Allym/blob/master/ )
+ * [2020-03-24]( https://github.com/baehongjun0212/H-Allym/blob/master/projectLog/2020.03.24.md )
  
