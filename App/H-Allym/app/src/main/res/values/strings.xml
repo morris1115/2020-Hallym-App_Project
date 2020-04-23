@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LoginPage</string>
+    <string-array name = "spinner_main">
+        <item>공대</item>
+        <item>인문대</item>
+        <item>자연대</item>
+    </string-array>
+    <string-array name="spinner_engineer">
+        <item>컴퓨터공학</item>
+        <item>전자공학</item>
+    </string-array>
+    <string-array name=""
+</resources>

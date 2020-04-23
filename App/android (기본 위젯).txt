@@ -1,0 +1,102 @@
+1. 텍스트 뷰
+text 속성
+- 텍스트뷰에 나타나는 문자열을 표현한다. "문자열" 형식으로 값을 직접 입력하거나 "@string/변수명" 형식으로 지정한 후 string.xml 파일에 지정할 수 있다.
+
+textColor 속성
+- 글자의 색상을 지정하며, background 속성처럼 값은 #RRGGBB나 #AARRGGBB 형식이다.
+	(android:textColor = "#00FF00")
+
+textSize 속성
+- 글자의 크기를 dp, px, in, mm, sp 단위로 지정한다.
+	(android:textSize = "30dp")
+
+typeface 속성
+- 글자의 글꼴을 지정한다. 값으로 sans, serif, monospace를 설정할 수 있고 디폴드는 normal이다.
+	(android:typeface = "serif")
+
+textStyle 속성
+- 글자의 스타일을 지정한다. 값으로 blod, italic, bold | italic을 설정할 수 있고, 디폴트는 normal이다.
+	(android:textStyle = "bold|italic")
+
+sigleLine 속성
+- 글이 길어 줄이 넘어갈 경우 강제로 한 줄까지만 출력하고 문자열 맨 뒤에 ' ... ' 를 표시한다. 값으로 true와 false를 설정할 수 있고 디폴트값은 false이다.
+	(android"sigleLine = "true")
+
+2. 버튼(Button)과 에디트 텍스트(EditText)
+- 버튼과 에디트텍스트는 View 와 TextView 클래스를 상속받으므로 거의 비슷하게 사용가능
+
+-- 버튼 --
+- 버튼을 클릭했을 때 동작하는 JAVA코드
+	1) 버튼 변수 선언
+		- Button mybutton;
+	2) 변수에 버튼 위젯 대입
+		- mybutton = (Button) findViewById(R.id.button1);
+	3) 버튼을 클릭할 때 동작하는 클래스 정의
+		- mybutton.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+			// 이 부분에 동작할 내용 코딩
+			}
+		});
+- 위 세 단계는 대부분 위젯( 라디오버튼, 이미지버튼, 체크박스, 토글버튼 등)에서 거의 동일하게 사용된다.
+
+-- 에디트텍스트--
+- 에디트텍스트는 값을 입력받은 후에 해당 값을 Java 코드에서 가져와 사용하는 용도로 많이 쓴다.
+	1) 에디트텍스트 변수 선언
+		EditText myEdit;
+	2) 변수에 에디트텍스트 위젯 대입
+		myEdit = (EditText) findViewById(R.id.edittext1);
+	3) 에디트텍스트에 입력된 값 가져오기 -> 주로 버튼 클릭 이벤트 리스너 안에 넣음
+		String myStr = myEdit.getText().toString();
+	** getText() 메서드는 에디트텍스트에 입력한 값을 반환하는데, 이를 문자열로 바꾸기 	위해 toString()을 함께 사용한다.
+
+3. 컴파운드 버튼
+- CompoundButton 클래스는 Button 클래스의 하위 클래스로, 체크박스, 라디오버튼, 스위치, 토글버튼의 상위 클래스이다. 
+
+-- 체크박스--
+- 체크 박스는 클릭할 때마다 체크, 언체크로 바뀐다. 여러 개의 체크박스가 있어도 서로 독립적으로 동작한다는 특징이 있어 여러 개를 동시에 체크할 수 있다.
+	(android:checked = "true")
+- Java 코드에서는 강제로 체크를 켜거나 끄는 setChecked(), 체크 상태를 반대로 바꿔주는 toggle(), 체크되었는지 확인하는 isChecked() 등의 메소드를 많이 사용한다.
+- 체크박스에는 체크 또는 언체크 이벤트 발생시 OnCheckedChangeListener 를 사용한다.
+	1) 체크박스 변수 선언
+		CheckBox mycheck;
+	2) 변수에 체크박스 위젯 대입
+		mycheck = (CheckBox) findViewById(R.id.android);
+	3) 체크박스가 변경될 때 동작하는 클래스 정의
+		mycheck.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+				// 이 부분에 동작할 내용 코딩
+			}
+		});
+
+-- 스위치와 토글버튼 --
+- 스위치의 주 용도는 온/오프 상태 표시이다. (토글 버튼도 비슷)
+<Switch 
+	android:checked = "true" />
+<ToggleButton 
+	android:checked = "true" />
+
+-- 라디오 버튼과 라디오 그룹 --
+- 라디오버튼은 XML 속성이나 메소드가 체크박스와 거의 동일 하지만 용도는 다르다.
+- 성별 선택 등 하나만 선택해야 하는 경우 사용
+- 라디오버튼만 여러 개 나열하면 클릭하는 것마다 모두 중복 선택되므로 라디오 그룹(RadioGroup)과 함께 사용해야 한다.
+- 라디오그룹은 ViewGroup-LinearLayout의 하위 클래스로 존재한다.
+- 라디오그룹은 라디오버튼을 묶어주는 역할만 한다.
+	<RadioGroup
+		android:id = "@+id/rGroup1">
+		<RadioButton
+			android:text = "남성" />
+		<RadioButton
+			android:text = "여성" />
+	</RadioGroup>
+
+3. 이미지뷰와 이미지버튼
+- 이미지뷰는 그림을 출력하는 위젯으로 그림이 필요하거나 화면을 화려하게 구성할 때 사용
+- 이미지뷰에 보여줄 그림 파일은 일반적으로 프로젝트의 [res] - [drawable]에 있어야 한다.
+- ImageView 클래스는 View 클래스에서 바로 상속받기 때문에 TextView의 하위 위젯들과 속성이 조금 다르다.
+- ImageButton 클래스는 ImageView 클래스에서 상속받으며 거의 동일한 용도로 사용하지만 버튼처럼 클릭하는 데 쓰인다.
+
+--- 이미지뷰와 이미지버튼의 XML속성 ---
+- src : 이미지의 경로를 나타냄
+- maxHeight / maxWidth : 이미지의 크기를 지정
+- scaleType : 이미지의 확대/축소 방식을 지정
+	( matrix, fitXY, fitStart, fitEnd, center)
