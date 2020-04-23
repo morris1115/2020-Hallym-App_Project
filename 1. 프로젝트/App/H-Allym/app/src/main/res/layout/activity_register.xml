@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"></ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text = "회원가입"
+            android:textSize="30dp"
+            android:textStyle="bold|italic"
+            android:gravity="center"
+            android:textColor = "@color/colorTitle"
+            android:layout_marginTop="10dp"></TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text = "I  D : "
+                android:textSize = "20dp"
+                android:paddingLeft="5dp"></TextView>
+            <EditText
+                android:id="@+id/registerId"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"></EditText>
+            <Button
+                android:id = "@+id/registerIdBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "중복확인"></Button>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text = "P W : "
+                android:textSize="20dp"
+                android:paddingLeft="5dp"></TextView>
+            <EditText
+                android:id="@+id/registerPassword"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text = "성  명 : "
+                android:textSize="20dp"
+                android:paddingLeft="5dp"></TextView>
+            <EditText
+                android:id="@+id/registerName"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text = "성  별 : "
+                android:textSize="20dp"
+                android:paddingLeft="5dp"></TextView>
+            <RadioGroup
+                android:id = "@+id/sexrGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id = "@+id/rdoBtnMan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text = "남 자"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"></RadioButton>
+                <RadioButton
+                    android:id = "@+id/rdoBtnWoman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text = "여 자"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="70dp"></RadioButton>
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text = "소  속 : "
+                android:textSize="20dp"
+                android:paddingLeft="5dp"></TextView>
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"></Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:id = "@+id/spinner2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="66dp"></Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text = "학  번 : "
+                android:textSize="20dp"
+                android:paddingLeft="5dp"></TextView>
+            <EditText
+                android:id = "@+id/registerNumber"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp">
+            <Button
+                android:id = "@+id/registerConfirmBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "확인"
+                android:layout_marginRight="5dp"></Button>
+            <Button
+                android:id = "@+id/registerCancelBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "취소"></Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

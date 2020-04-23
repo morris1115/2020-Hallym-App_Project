@@ -1,0 +1,42 @@
+id 속성
+- id 속성은 모든 위젯의 아이디를 나타내며 Java코드에서 버튼 등의 위젯에 접근할 때 id 속성에 지정한 아이디를 사용
+- 일반적으로 id 속성은 위젯에 아이디를 새로 부여하는 개념이므로 "@+id/"형식으로 지정한다.
+- / 다음에는 새로 지정할 id를 넣는다.
+	android:id = "@+id/btn1"
+- Button, RadioButton, CheckBox 등의 위젯은 일반적으로 클릭 또는 터치했을 때 어떤 동작을 하기위한 것이므로 id를 지정한다.
+- 클릭이나 터치했을 때 어떤 동작이 필요 없는 글자(TextView), ImageView 등은 id속성 생략 가능
+
+layout_width, layout_height 속성
+- 각각 위젯의 폭(width)과 높이(height)를 나타낸다.
+- 이 둘은 각각 match_parent와 wrap_content 값으로 설정 가능
+- match_parent는 자신의 부모(레이아웃)에 위젯 크기의 폭이나 높이를 맞춘다는 의미
+(layout의 크기에 맞춤)
+- wrap_content는 자신의 폭이나 높이를 자신 안의 글자가 꼭 들어갈 정도로 설정한다는 의미
+(글자 크기에 맞춤)
+- 값을 숫자로 직접 지정할 수 있는데 이때는 px(픽셀) 단위이기 때문에 AVD의 해상도에 맞게 지정해야 한다.
+- ***위젯의 크기를 in, min, pt, dp, sp 등의 단위로 직접 지정가능, 이 중 주로 사용되는 것은 dp(=dip)이다. dp는 화면 밀도에 독립적으로 사용되는 단위인데, 이를 사용하면 실행되는 안드로이드폰의 해상도가 다르더라도 결과는 같은 비율로 출력되는 효과를 낸다.
+
+background 속성
+- background 속성은 위젯의 색상을 #RRGGBB 값으로 지정한다.
+- RR,GG,BB의 위치는 16진수(00~FF)로 표현
+- 이 외에 색상지정을 #AARRGGBB 방식으로 사용할 수도 있다. AA는 알파 값으로 투명도를 지정한다. 00~FF로 지정할 수 있는데 00은 완전 투명을, FF는 완전 불투명을 나타낸다.
+
+padding, layout_margin 속성
+- padding 속성을 사용하여 위젯의 경계선으로부터 위젯 안의 요소가 떨어지도록 설정할 수 있다. (android:padding = "30dp")
+- 위젯과 위젯 사이에 여유를 두고 싶다면 layout_margin 속성을 사용 ( layout_margin의 각 위젯의 속성으로 각각 지정해야한다.)
+	(android:layout_margin = "20dp")
+
+visibility 속성
+- visibility 속성은 위젯을 보일 것인지 여부를 결정한다.
+- 디폴트 값인 visible은 보이는 상태
+- invisible과 gone은 안 보이는 상태
+- invisible은 보이지 않을 뿐 위젯원래의 자리는 계속 유지
+- gone은 보이지도 않고 그 자리까지 내놓는다.
+
+enabled, clickable 속성
+- 위젯의 동작 여부는 enabled 속성으로
+- 클릭이나 터치 가능은 clickable 속성으로 지정
+- true, false로 지정하며 디폴트 값은 true이다.
+
+rotation 속성
+- rotation은 위젯을 회전시켜서 출력하며 값은 각도록 지정한다. 
