@@ -36,4 +36,4 @@
 * > MariaDB
 
 ## 5. 회의록
-* > [바로가기](https://github.com/baehongjun0212/H-Allym/tree/master/%ED%9A%8C%EC%9D%98%EB%A1%9D)
+* > [바로가기](https://github.com/baehongjun0212/H-Allym/tree/master/4.%20%ED%9A%8C%EC%9D%98%EB%A1%9D)
