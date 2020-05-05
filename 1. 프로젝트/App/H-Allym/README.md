@@ -48,6 +48,9 @@ ALTER TABLE public.temporage_data OWNER to postgres;
 - 세션 기능 추가 예정 
 - CI/CD git 연동 및 배포 완료. 
 
+# PROJECT 05/05
+- Get 메소드 파트 수정
+- DataBase 연동 수정
 ---
 
 # result_code

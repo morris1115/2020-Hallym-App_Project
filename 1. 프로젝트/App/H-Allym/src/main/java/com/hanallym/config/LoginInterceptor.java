@@ -36,4 +36,4 @@ public class LoginInterceptor implements HandlerInterceptor {
     }
 }
 
-//로그인이라는 것에 세션이 있는지 없는지 확인
+//로그인이라는 것에 세션이 있는지 없는지 확인(로그인이 url로 들어올 떄 세션 체크)

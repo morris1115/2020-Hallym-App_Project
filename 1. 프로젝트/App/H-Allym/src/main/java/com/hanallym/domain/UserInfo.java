@@ -39,4 +39,28 @@ public class UserInfo {
         this.userPw = userPw;
         this.userName = userName;
     }
+
+	public int getUserIdx() {
+		return userIdx;
+	}
+
+	public String getUserEmail() {
+		return userEmail;
+	}
+
+	public String getUserPw() {
+		return userPw;
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public LocalDateTime getCreate_date() {
+		return create_date;
+	}
+    
+    
+    
+    
 }
