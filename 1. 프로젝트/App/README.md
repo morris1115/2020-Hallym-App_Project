@@ -51,6 +51,10 @@ ALTER TABLE public.temporage_data OWNER to postgres;
 # PROJECT 05/05
 - Get 메소드 파트 수정
 - DataBase 연동 수정
+
+# PROJECT 05/19
+- 세션 오류로 세션 파트 수정
+- ddl-auto 수정 / 서버가 종료 되어도 아이디, 비밀번호가 유지되도록 수정
 ---
 
 # result_code
