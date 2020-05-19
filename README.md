@@ -31,6 +31,8 @@
 
 ## 4. 개발 환경
 * > Apache-tomcat-8.5.54
+* > JAVA JSON
+* > Python Restful API
 * > Java Eclips
 * > AndroidStudio 
 * > MariaDB
