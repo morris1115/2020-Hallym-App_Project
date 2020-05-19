@@ -28,7 +28,7 @@ ALTER TABLE public.temporage_data OWNER to postgres;
 
 ### API
 #### /save : parameter - key, value
-##### 해당 parameter로 request를 보내 DB에 저장. 현재 시간도 함께 저장.
+#####해당 parameter로 request를 보내 DB에 저장. 현재 시간도 함께 저장.
 #### /getData : parameter - key
 ##### key로 값을 찾아 return함. key, value, datetime이 return 됨.
 
@@ -74,15 +74,14 @@ ALTER TABLE public.temporage_data OWNER to postgres;
 여기서는 SpringRunner라는 스프링 실행자를 사용한다. 즉 스프링 부트 테스트와 JUnit 사이에 연결자 역할을 한다.
 ### @WebMvcTest
 - 여러 스프링 어노테이션중 Web에 집중할 수 있는 어노테이션 전체 어노테이션의 자동완성을 중단하는 대신, MVC설정에 해당하는 자동완성만 활성화를 한다.
-### @WebMvcTest annotation is used for Spring MVC tests. It disables full auto-configuration and instead apply only configuration relevant to MVC tests.
 ### @Autowired
 - 스프링이 관리하는 Bean을 주입받는다.
-### private  MockMvc mvc
+### @private  MockMvc mvc
 - 웹 API를 테스트할 떄 사용한다. 테스트의 시작점이다. 이 클래스로 HTTP GET, POST 등의 API를 테스트 할 수 있음
 
-### mvc.perform(get("/hello"))
-### MockMvc를 통해 /hello 로 HTTP GET 을 request 한다
-### status().isOk() 
-### mvc.perform의 결과를 검증한다. http status(200, 404, 500 등) 의 반환값을 가진다.
-### content().string(hello)
-### mvc.perform 의 결과를 검증한다. 본문의 내용에서 값이 맞는지 검증한다.
+### @mvc.perform(get("/hello"))
+- MockMvc를 통해 /hello 로 HTTP GET 을 request 한다
+### @ status().isOk() 
+- mvc.perform의 결과를 검증한다. http status(200, 404, 500 등) 의 반환값을 가진다.
+### @ content().string(hello)
+- mvc.perform 의 결과를 검증한다. 본문의 내용에서 값이 맞는지 검증한다.
