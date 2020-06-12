@@ -4,7 +4,7 @@
 ## 0. 업무 프로세스 
 * 팀장: [배홍준]( https://github.com/baehongjun0212)
 * 팀원: [권동혁]( https://github.com/247KD )
-* 팀원: [김병두]( https://github.com/rlaquden901 )
+* 팀원: [김병두]( https://github.com/byeongddoo )
 * 팀원: [문광운]( https://github.com/MoonGwangUn )
 * 팀원: [안춘모]( https://github.com/morris1115 )
  <img width="887" alt="한알림 업무 프로세스" src="https://user-images.githubusercontent.com/55692618/80080427-94684b00-858c-11ea-8275-0bfd5c693a2e.PNG">
@@ -18,10 +18,9 @@
 ***
 
 ## 2. 프로젝트 기능
-* >교내 공지사항 및 학교 자치 단체 공지사항 ***푸시 알림*** 기능 
-* >교내 공지사항 및 학교 자치 단체 ***카테고리 설정*** 기능
+* >교내 전체 공지사항 및 단과대학, 기숙사 공지사항 ***푸시 알림*** 기능
+* >학생 인증을 위한 ***회원가입 및 로그인*** 기능 
 * >공지사항 ***키워드 설정*** 및 푸시 알림 
-* >학생 자치 단체 ***공지 권한*** 부여 기능
 ***
 
 ## 3. 프로젝트 기대효과 및 활용방안
@@ -30,11 +29,11 @@
 * >***소셜 미디어 미사용자, 단체 채팅방 미접속자***를 위한 공지사항 확인의 범용성 증대
 
 ## 4. 개발 환경
-* > Apache-tomcat-8.5.54
 * > JAVA JSON
-* > Python Restful API
+* > REST API
 * > Java Eclips
-* > AndroidStudio 
+* > Flutter
+* > Dart 
 * > MariaDB
 
 ## 5. 회의록
