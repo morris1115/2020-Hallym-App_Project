@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1094120767977",
+    "firebase_url": "https://han-alarm-7cb3a.firebaseio.com",
+    "project_id": "han-alarm-7cb3a",
+    "storage_bucket": "han-alarm-7cb3a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1094120767977:android:851f6ee21ae4e384788b78",
+        "android_client_info": {
+          "package_name": "study.project.hanalarm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1094120767977-s326j86b70tchkm9kfuserkce4pidmf6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMFJV8bzj3PmxgxkjlFFGV8ZiUDQnzYFA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1094120767977-s326j86b70tchkm9kfuserkce4pidmf6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
